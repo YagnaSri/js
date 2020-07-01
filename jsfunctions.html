@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tables</title>
+</head>
+<body>
+<h3> Creating table with Last Semester Marks</h3>
+<style>
+table, th, td
+{
+border: 3px solid black;
+border-collapse: collapse;
+border-spacing: 2px;
+}
+th, td {
+padding: 12px;
+}
+</style>
+<table style="width:100%">
+<caption>Hall TICKET: 17251D0437</caption>
+  <tr>
+    <th>Subject Title</th>
+    <th>Grade Points</th>
+    <th>Credits</th>
+    <th>Marks(poins*Credits)</th>
+  </tr>
+  <tr>
+    <td>Switching Theory and Logic Design</td>
+    <td>8</td>
+    <td>3.0</td>
+    <td>24.0</td>
+  </tr>
+  <tr>
+    <td>Pulse and Digital circuits</td>
+    <td>7</td>
+    <td>4.0</td>
+    <td>28.0</td>
+
+  </tr>
+<tr>
+<td>Control Systems</td>
+<td>9</td>
+<td>4.0</td>
+<td>36.0</td>
+
+</tr>
+<tr>
+<td>Analog Communications</td>
+<td>7</td>
+<td>4.0</td>
+<td>28.0</td>
+
+</tr>
+<tr>
+<td>Business Economics and Financial Analysis</td>
+<td>8</td>
+<td>3.0</td>
+<td>24.0</td>
+
+</tr>
+<tr>
+<td>Analog Communications Lab</td>
+<td>9</td>
+<td>2.0</td>
+<td>18.0</td>
+</tr>
+<tr>
+<td>Pulse and Digital Circuits Lab</td>
+<td>10</td>
+<td>2.0</td>
+<td>20.0</td>
+</tr>
+<tr>
+<td>Analog Electronics</td>
+<td>10</td>
+<td>2.0</td>
+<td>20.0</td>
+</tr>
+<tr>
+	 
+	<td colspan="4">Total Marks:198</td>
+	</td>
+</tr>
+<tr>
+        <td colspan="4">Average Marks(Total Marks/total credits=24): 8.25  </td>
+</tr>
+
+</table>
+<p id="Total"></p>
+<script>
+        var x=24+28+36+28+24+20+20+18;
+        var y=Average(x);
+       
+       document.getElementById("Total").innerHTML=y;
+function Average(a){
+	return a/24;
+}
+</script>
+
+
+</body>
+</html>

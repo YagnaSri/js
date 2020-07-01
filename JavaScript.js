@@ -1,0 +1,1 @@
+document.write("JavaScript is scripting lagnuage which is used for creating dynamic web pages and Web Applications etc,.It is written HTML page under the tags-*script*.It has many interesting features in it, where we use them daily, but we are unaware of the usefullness of javaScript.It is versatile ,compact and flexible web-programming language");

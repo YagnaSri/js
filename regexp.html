@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+.rdip{
+float:right;}
+h2{
+text-align: center;
+}
+.table1{
+background-color:black;
+text-align:left;
+color:white;
+padding:5px;
+}
+</style>
+<body>
+<h2>REGISTRATION PAGE </h2>
+<a href="https://www.iiit.ac.in/ ">
+<img src="logo.png" style="height:80px;">
+<a class="rdip" href="https://serc.iiit.ac.in/rdip" target="_blank" style="font-size:180%;" align=right;>RDIP</a>
+<table  class="table1" style="width:100%"; "background-color:black;">
+<tr>
+<td><a href="homepage.html" style="color:white">HOME</a></td>
+<td><a href="registration.html" style="color:white">Registration form</a></td>
+</tr><br><br>
+<form>
+<script>
+function Name(){
+var str=document.getElementById("fname").value;
+var  name alert=document.getElementById("name alert");
+if(!((/^[a-zA-Z]+$/.test(str))||str.length==0)){
+fname Alert.style.display="block";
+fname Alert.innerHTML="Only Alphabets are allowed"
+fnameFlag=false;
+}
+else{
+name Alert.style.display="none";
+nameFlag=false;
+}
+}
+</script>
+<table>
+<div>
+<tr>First Name: <input type="text" id="fname" name="fname" required onkeyup="Name"();></tr><br>
+<p id="name alert"></p></div>
+<tr>E-mail:<input type="text" name="mail:></tr><br>
+<tr>Phone number:<input type="number" name="mobile"></tr><br>
+<tr>
+<td>
+Gender
+</td>
+<td>
+      <input type="radio" name="Gender">Male
+      <input type="radio" name="Gender">Female
+      <input type="radio" name="Gender">Other
+</td>
+</tr>
+<tr>
+<td>
+Reason for RDIP
+</td>
+<td>
+      <input type="radio" name="Reason for RDIP">HTML
+      <input type="radio" name="Reason for RDIP">CSS
+      <input type="radio" name="Reason for RDIP">JavaScript
+</td>
+</tr>
+<tr>
+<td>College:</td>
+<td><input type="text" name""></td>
+</tr>
+<tr>
+<td><input type="checkbox" name""></td>
+<td>I declare above details given by me are true</td>
+</tr>
+<tr>
+<td><input type="submit" name"" formaction="details.html"></td>
+<td><input type="reset" name"" ></td>
+</tr>
+<tr>
+</tr>
+
+</table>
+</form>

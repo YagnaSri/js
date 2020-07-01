@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<style>
+.rdip{
+float:right;}
+h2{
+text-align: center;
+}
+.table1{
+background-color:black;
+text-align:left;
+color:white;
+padding:5px;
+}
+</style>
+ <script>
+    function showInput() {
+        document.getElementById('display').innerHTML =
+                    document.getElementById("user_input").value;
+    }
+  </script>
+<body>
+<h2>REGISTRATION PAGE </h2>
+<a href="https://www.iiit.ac.in/ ">
+<img src="logo.png" style="height:80px;">
+<a class="rdip" href="https://serc.iiit.ac.in/rdip" target="_blank" style="font-size:180%;" align=right;>RDIP</a>
+<table  class="table1" style="width:100%"; "background-color:black;">
+<tr>
+<td><a href="homepage.html" style="color:white">HOME</a></td>
+<td><a href="registration.html" style="color:white">Registration form</a></td>
+</tr><br><br>
+ <form >
+<table>
+<tr>
+<td>First Name:</td>
+<td><input type="text" id="user_input" name""></td><br></tr
+<tr>
+<td>E-mail:</td>
+<td><input type="text" id="user_input" name""></td><br>
+</tr>
+<tr>
+<td>Phone Number:</td>
+<td><input type="number" id="validate" name="number" required></td>
+</tr>
+<tr>
+<td>
+Gender
+</td>
+<td>
+      <input type="radio" name="Gender"id="user_input" >Male
+      <input type="radio" name="Gender" id="user_input" >Female
+      <input type="radio" name="Gender"id="user_input" >Other
+</td>
+</tr>
+<tr>
+<td>
+Reason for RDIP
+</td>
+<td>
+      <input type="radio" name="Reason for RDIP" required id="user_input" >HTML
+      <input type="radio" name="Reason for RDIP" required id="user_input" >CSS
+      <input type="radio" name="Reason for RDIP" required id="user_input" >JavaScript
+</td>
+</tr>
+<tr>
+<td>College:</td>
+<td><input type="text" name""></td>
+</tr>
+<tr>
+<td><input type="checkbox" name""></td>
+<td>I declare above details given by me are true</td>
+</tr>
+<tr>
+<td><input type="submit" onclick="showInput();"></td>
+<td><input type="reset" name"" ></td>
+</tr>
+<tr>
+</tr>
+<p><span id='display'></span></p>
+</table>
+<p id="numb"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  x = document.getElementById(".validate").value;
+alert("x");
+  // If x is Not a Number or less than one or greater than 10
+ // if (isNaN(x) || x < 1 || x > 10) {
+   // text = "Input not valid";
+  //} else {
+    //text = "Input OK";
+  }
+  //document.getElementById("numb").innerHTML = text;
+}
+</script>
+
+</form>
