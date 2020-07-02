@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div 
+onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+<button onclick="displayDate()">The time is?</button>
+<img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="jslogo.jpg"  width="200" height="200">
+<p id="demo"></p>
+<script>
+function displayDate() {
+ document.getElementById("demo").innerHTML = Date();
+}
+function bigImg(x) {
+  x.style.height = "300px";
+  x.style.width = "300px";
+}
+function normalImg(x) {
+  x.style.height = "130px";
+  x.style.width = "130px";
+}
+
+</script>
+</body>
+</html>

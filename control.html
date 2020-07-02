@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+<script>
+function fibonacci(n)
+{
+var output = "0 1";
+var  f=0, s=1, sum=0;
+for(var i=2; i<=n; i++)
+ {
+  sum = f + s;
+  output =output+' ' + sum;
+f=s;
+s=sum;
+}
+return output;
+}
+function range(x) {
+  if (x >= 10 && x <= 100) 
+    return true;
+    else 
+    return false;
+}
+console.log(range(50));
+console.log(range(5));
+console.log(fibonacci(15));
+
+</script>
+</body>
+</html>

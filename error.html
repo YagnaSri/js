@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+        <p id="test"></p>
+        <p id="Throw"></p>
+        <body>
+<input id="demo" type="text">
+<button type="button" onclick="range()">Range </button>
+
+<script>
+function range() {
+ var message, x;
+  message = document.getElementById("Throw");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 100)   throw "is too high";
+    if(x < 10)  throw "is too low";  
+if (x >= 10 && x <= 100)
+    throw "exists between the numbers";
+    else
+  throw "doesn't exists  between the numbers";
+
+ }
+  catch(err) {
+    message.innerHTML = "Input"+ " " + err;
+  }
+  finally {
+    document.getElementById("demo").value = "";
+  }
+}
+try{
+        Console.log(date());
+}
+catch(err){
+        document.getElementById("test").innerHTML=err.message;
+}
+</script>
+</body>
+</html>
+
