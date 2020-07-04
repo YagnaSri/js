@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide demo</title>
+  <style>
+  p {
+    background: #dad;
+    font-weight: bold;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+<button id="hider">Hide </button>
+<h3>Germany </h3>
+<p id="demo">DEUTSCHLAND</p>
+<input type="button" onclick="myfun()" value="Displaying text with display property">
+ 
+<script>
+$( "#hider" ).click(function() {
+  $( "h3" ).hide( "slow" );
+});
+function myfun(){
+document.getElementById("demo").style.display="inline";
+}
+</script>
+ 
+</body>
+</html>
